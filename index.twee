@@ -1,0 +1,20 @@
+::StoryData
+{
+    "ifid": "gmtk-jam-2021-nobody5050",
+    "format": "Sugarcube",
+    "format-version": ""2.0.0,
+    "start": "Start"
+}
+
+:: StoryTitle
+Test Story Title
+
+
+:: Start
+Boilerplate twee3 stuff
+
+[[Test of Second Passage|Next Passage]]
+
+
+:: Next Passage
+Second passage works
