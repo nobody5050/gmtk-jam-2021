@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - trijam
 
 jobs:
   build:
