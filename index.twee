@@ -1,6 +1,7 @@
 ::StoryData
 {
     "format": "Sugarcube-2",
+        "format-version": "2.30.0",
     "start": "Start"
 }
 
