@@ -9,6 +9,9 @@
 :: StoryTitle
 GMTK Jam 2021
 
+:: script
+Config.history.maxStates = 1;
+Config.history.controls = false;
 
 :: Start
 <h1>Welcome to PhoneCompany INC!</h1> 
