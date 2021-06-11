@@ -24,5 +24,11 @@ You dont know how to operate a switchboard?
 of course you dont!
 
 :: Game
+<!-- Everything below is testing for the game -->
 <h1> Day *num goes here* </h1>
 <<linkreplace "You'll //never// take me alive!" t8n>>On second thought, don't hurt me.<</linkreplace>>
+<div class="btn-group">
+  <button>Apple</button>
+  <button>Samsung</button>
+  <button>Sony</button>
+</div>
