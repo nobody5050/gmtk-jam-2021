@@ -21,7 +21,7 @@ jobs:
           go get github.com/tmedwards/tweego
           export PATH=$PATH:$(go env GOPATH)/bin
           mkdir dist
-          tweego -o dist/index.html index.twee
+          tweego -o dist/index.html index.twee -m modules
 
 
       - name: Deploy
