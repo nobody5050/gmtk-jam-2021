@@ -37,6 +37,7 @@ Smol Helpers
     <th>Firstname</th>
     <th>Lastname</th> 
     <th>Age</th>
+    <th>Status</th>
   </tr>
   <tr>
     <td>Jill</td>
