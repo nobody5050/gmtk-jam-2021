@@ -11,10 +11,15 @@ GMTK Jam 2021
 
 
 :: Start
-Welcome to PhoneCompany INC! We're pleased you decided to apply as a switchboard operator! If you have any questions, just ask. Otherwise, good luck on your first day!
+<h1>Welcome to PhoneCompany INC!</h1> 
+We're pleased you decided to apply as a switchboard operator! If you have any questions, just ask. Otherwise, good luck on your first day!
 
 [[How do I operate a switchboard?|Tutorial]]
+[[Start day 1|Game]]
 
 
 :: Tutorial
 Tutorial goes here
+
+:: Game
+hi
