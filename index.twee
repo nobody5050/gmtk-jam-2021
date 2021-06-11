@@ -51,4 +51,16 @@ Smol Helpers
     <td>94</td>
     <td><button>Connect</button></td>
   </tr>
+  <tr>
+    <td>Johnny</td>
+    <td>Jackson</td> 
+    <td>34</td>
+    <td><button>Connect</button></td>
+  </tr>
+  <tr>
+    <td>Adam</td>
+    <td>Cook</td> 
+    <td>94</td>
+    <td><button>Connect</button></td>
+  </tr>
 </table>
