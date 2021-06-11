@@ -6,15 +6,15 @@
     "start": "Start"
 }
 
-:: StoryTitle
-Test Story Title
+:: Gmtk jam thing
+Can you stop a bank robbery before it's too late?
 
 
 :: Start
-Boilerplate twee3 stuff
+Welcome to PhoneCompany INC! We're pleased you decided to apply as a switchboard operator! If you have any questions, just ask. Otherwise, good luck on your first day!
 
-[[Test of Second Passage|Next Passage]]
+[[How do I operate a switchboard?|Tutorial]]
 
 
-:: Next Passage
-Second passage works
+:: Tutorial
+Tutorial goes here
