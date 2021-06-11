@@ -43,7 +43,7 @@ Smol Helpers
     <td>Jill</td>
     <td>Smith</td> 
     <td>50</td>
-    <td><button onclick="appendCallContent">Connect</button></td>
+    <td><button onclick="appendCallContent()">Connect</button></td>
   </tr>
   <tr>
     <td>Eve</td>
@@ -60,7 +60,7 @@ function appendCallContent() {
 var paragraph = document.getElementById("call-content");
 var items = ["hi", "hello", "sup"];
 var item = items[Math.floor(Math.random() * items.length)];
-paragraph.textContent += items;
+paragraph.textContent += item;
 }
 </script>
 
