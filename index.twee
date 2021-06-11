@@ -31,10 +31,14 @@ Smol Helpers
 
 :: Game
 <!-- Everything below is testing for the game -->
-<h1> Day *num goes here* </h1>
-<<linkreplace "You'll //never// take me alive!" t8n>>On second thought, don't hurt me.<</linkreplace>>
-<div class="btn-group">
-  <button>Apple</button>
-  <button>Samsung</button>
-  <button>Sony</button>
+<div class="grid-container">
+  <div class="grid-item">1</div>
+  <div class="grid-item">2</div>
+  <div class="grid-item">3</div>
+  <div class="grid-item">4</div>
+  <div class="grid-item">5</div>
+  <div class="grid-item">6</div>
+  <div class="grid-item">7</div>
+  <div class="grid-item">8</div>
+  <div class="grid-item">9</div>
 </div>
