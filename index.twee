@@ -60,7 +60,7 @@ function appendCallContent() {
 var paragraph = document.getElementById("call-content");
 var items = ["hi", "hello", "sup"];
 var item = items[Math.floor(Math.random() * items.length)];
-paragraph.textContent += item;
+paragraph.textContent += item + "\n\n";
 }
 </script>
 
