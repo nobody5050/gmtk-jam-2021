@@ -31,7 +31,7 @@ Smol Helpers
 
 :: Game
 <!-- Everything below is testing for the game -->
-<h1>Game</h1>
+<h1>Switchboard</h1>
 <table style="width:100%">
   <tr>
     <th>Firstname</th>
