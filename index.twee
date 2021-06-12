@@ -6,13 +6,13 @@
     "start": "Start"
 }
 
-:: StoryTitle
+::StoryTitle
 GMTK Jam 2021
 
 ::StoryIncludes
-tutorial.twee
+tutorial.tw2
 
-:: Start
+::Start
 <h1>Welcome to PhoneCompany INC!</h1> 
 We're pleased you decided to apply as a switchboard operator! If you have any questions, just ask. Otherwise, good luck on your first day!
 
