@@ -30,3 +30,7 @@ button.connected {
 	transition-duration: 200ms;
 	user-select: none;
 }
+
+td,th {
+text-align: center;
+} 
