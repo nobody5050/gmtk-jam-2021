@@ -307,6 +307,7 @@ function appendCallContent() {
   var paragraph = document.getElementById(&quot;call-content&quot;);
   var items = [&quot;hi&quot;, &quot;hello&quot;, &quot;sup&quot;];
   var item = items[Math.floor(Math.random() * items.length)];
+  items.splice(item)
   paragraph.innerHTML += item + &quot;&lt;br /&gt;&quot;;
 }
 
@@ -316,12 +317,21 @@ function connect(number) {
   document.getElementsByClassName(&quot;connected&quot;)[0].className = &quot;disconnected&quot;;
   document.getElementById(currentConnected).className = &quot;connected&quot;;
   document.getElementById(currentConnected).innerHTML = &quot;Connected&quot;;
-  //document.getElementsByClassName(&quot;connected&quot;).innerHTML = &quot;Connected&quot;;
+  x = (Math.floor(Math.random() * 2) == 0);
+    if(x){
+        appendCallContent();
+    }else{
+        appendCrime();
+    }
 }
 
-//while(true) {
-//  
-//}
+function appendCrime() {
+  var paragraph = document.getElementById(&quot;call-content&quot;);
+  var items = [&quot;Remember, The Job Goes Down in 5 days.&quot;, &quot;hello&quot;, &quot;sup&quot;];
+  var item = items[Math.floor(Math.random() * items.length)];
+  items.splice(item)
+  paragraph.innerHTML += item + &quot;&lt;br /&gt;&quot;;
+}
 &lt;/script&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
