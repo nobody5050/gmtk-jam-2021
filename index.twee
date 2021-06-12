@@ -154,6 +154,7 @@ function appendCallContent() {
   var paragraph = document.getElementById("call-content");
   var items = ["hi", "hello", "sup"];
   var item = items[Math.floor(Math.random() * items.length)];
+  items.splice(item)
   paragraph.innerHTML += item + "<br />";
 }
 
@@ -163,11 +164,20 @@ function connect(number) {
   document.getElementsByClassName("connected")[0].className = "disconnected";
   document.getElementById(currentConnected).className = "connected";
   document.getElementById(currentConnected).innerHTML = "Connected";
-  //document.getElementsByClassName("connected").innerHTML = "Connected";
+  x = (Math.floor(Math.random() * 2) == 0);
+    if(x){
+        appendCallContent();
+    }else{
+        appendCrime();
+    }
 }
 
-//while(true) {
-//  
-//}
+function appendCrime() {
+  var paragraph = document.getElementById("call-content");
+  var items = ["Remember, The Job Goes Down in 5 days.", "hello", "sup"];
+  var item = items[Math.floor(Math.random() * items.length)];
+  items.splice(item)
+  paragraph.innerHTML += item + "<br />";
+}
 </script>
 
