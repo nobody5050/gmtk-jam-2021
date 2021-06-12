@@ -161,7 +161,8 @@ function connect(number) {
   document.getElementsByClassName("connected").innerHTML = "Not Connected";
   document.getElementsByClassName("connected").className = "disconnected";
   document.getElementById(currentConnected).className = "connected";
-  document.getElementsByClassName("connected").innerHTML = "Connected";
+  document.getElementById(currentConnected).innerHTML = "Connected";
+  //document.getElementsByClassName("connected").innerHTML = "Connected";
 }
 
 //while(true) {
