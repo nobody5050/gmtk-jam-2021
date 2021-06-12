@@ -172,7 +172,29 @@ while true {
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://9EE4ECD3-1884-4A59-9137-148692F842EC// --><tw-storydata name="GMTK Jam 2021" startnode="1" creator="Tweego" creator-version="2.1.1" ifid="9EE4ECD3-1884-4A59-9137-148692F842EC" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">&lt;h1&gt;Welcome to PhoneCompany INC!&lt;/h1&gt; 
+	<!-- UUID://9EE4ECD3-1884-4A59-9137-148692F842EC// --><tw-storydata name="GMTK Jam 2021" startnode="1" creator="Tweego" creator-version="2.1.1" ifid="9EE4ECD3-1884-4A59-9137-148692F842EC" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">Config.history.maxStates = 1;
+Config.history.controls = false;
+
+currentConnected = 0;
+
+function appendCallContent() {
+  var paragraph = document.getElementById("call-content");
+  var items = ["hi", "hello", "sup"];
+  var item = items[Math.floor(Math.random() * items.length)];
+  paragraph.innerHTML += item + "<br />";
+}
+
+function connect(number) {
+  currentConnected = [number]
+  document.getElementsByClassName("connected").innerHTML = "Not Connected";
+  document.getElementsByClassName("connected").className = "disconnected";
+  document.getElementById([number]).className = "connected";
+  document.getElementsByClassName("connected").innerHTML = "Connected";
+}
+
+while true {
+  
+}</script><tw-passagedata pid="1" name="Start" tags="" position="100,100" size="100,100">&lt;h1&gt;Welcome to PhoneCompany INC!&lt;/h1&gt; 
 We&#39;re pleased you decided to apply as a switchboard operator! If you have any questions, just ask. Otherwise, good luck on your first day!
 
 [[&quot;How do I operate a switchboard?&quot;|Tutorial]]
