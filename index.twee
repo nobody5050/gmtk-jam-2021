@@ -162,10 +162,11 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
 </center>
 <script>
 var currentConnected = 0;
+var crimeItems = ["Remember, The Job Goes Down in 5 days.", "hello", "sup"];
+var items = ["hi", "hello", "sup"];
 
 function appendRandom() {
   var paragraph = document.getElementById("call-content");
-  var items = ["hi", "hello", "sup"];
   int = Math.floor(Math.random() * items.length)
   var item = items[int];
   items.splice(int,1)
@@ -188,10 +189,9 @@ function connect(number) {
 
 function appendCrime() {
   var paragraph = document.getElementById("call-content");
-  var items = ["Remember, The Job Goes Down in 5 days.", "hello", "sup"];
-  int = Math.floor(Math.random() * items.length)
-  var item = items[int];
-  items.splice(int,1)
+  int = Math.floor(Math.random() * crimeitems.length)
+  var item = crimeitems[int];
+  crimeitems.splice(int,1)
   paragraph.innerHTML += item + "<br />";
 }
 </script>
