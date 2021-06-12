@@ -158,7 +158,7 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
 <div class="connected" style="position: absolute;left: -9999px;">Not Connected</div>
 
 <h2>Call Log</h2>
-<p id="call-content"></p>
+<table id="call-content"><tr><td>message</td><tr></table>
 </center>
 <script>
 var currentConnected = 0;
@@ -170,7 +170,7 @@ function appendRandom() {
   int = Math.floor(Math.random() * items.length)
   var item = items[int];
   items.splice(int,1)
-  paragraph.innerHTML += item + "<br />";
+  paragraph.innerHTML += "<tr><td>" + item + "</td></tr>";
 }
 
 function connect(number) {
@@ -192,7 +192,7 @@ function appendCrime() {
   int = Math.floor(Math.random() * crimeitems.length)
   var item = crimeitems[int];
   crimeitems.splice(int,1)
-  paragraph.innerHTML += item + "<br />";
+  paragraph.innerHTML += "<tr><td>" + item + "</td></tr>";
 }
 </script>
 
