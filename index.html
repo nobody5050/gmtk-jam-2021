@@ -309,10 +309,11 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
 &lt;/center&gt;
 &lt;script&gt;
 var currentConnected = 0;
+var crimeItems = [&quot;Remember, The Job Goes Down in 5 days.&quot;, &quot;hello&quot;, &quot;sup&quot;];
+var items = [&quot;hi&quot;, &quot;hello&quot;, &quot;sup&quot;];
 
 function appendRandom() {
   var paragraph = document.getElementById(&quot;call-content&quot;);
-  var items = [&quot;hi&quot;, &quot;hello&quot;, &quot;sup&quot;];
   int = Math.floor(Math.random() * items.length)
   var item = items[int];
   items.splice(int,1)
@@ -335,10 +336,9 @@ function connect(number) {
 
 function appendCrime() {
   var paragraph = document.getElementById(&quot;call-content&quot;);
-  var items = [&quot;Remember, The Job Goes Down in 5 days.&quot;, &quot;hello&quot;, &quot;sup&quot;];
-  int = Math.floor(Math.random() * items.length)
-  var item = items[int];
-  items.splice(int,1)
+  int = Math.floor(Math.random() * crimeitems.length)
+  var item = crimeitems[int];
+  crimeitems.splice(int,1)
   paragraph.innerHTML += item + &quot;&lt;br /&gt;&quot;;
 }
 &lt;/script&gt;</tw-passagedata></tw-storydata>
