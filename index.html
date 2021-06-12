@@ -303,7 +303,7 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
 Config.history.maxStates = 1;
 Config.history.controls = false;
 
-currentConnected = 0;
+var currentConnected = 0;
 
 function appendCallContent() {
   var paragraph = document.getElementById(&quot;call-content&quot;);
@@ -313,7 +313,7 @@ function appendCallContent() {
 }
 
 function connect(number) {
-  currentConnected = [number]
+  let currentConnected = [number];
   document.getElementsByClassName(&quot;connected&quot;).innerHTML = &quot;Not Connected&quot;;
   document.getElementsByClassName(&quot;connected&quot;).className = &quot;disconnected&quot;;
   document.getElementById([number]).className = &quot;connected&quot;;
