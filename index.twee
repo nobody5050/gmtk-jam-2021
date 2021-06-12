@@ -52,8 +52,10 @@ here's an example call monitor:
 </table>
 
 [[Got it.|Tutorial-2]]
+</center>
 
 ::  Tutorial-2
+<center>
 To respond to a call, look at the phone directory. The phone directory lists all of the people at your station, along with their phone number. Just look for the destination number in the list, and hit the green <button class="connect">Connect</button> button.
 
 here's an example phone directory:
@@ -82,8 +84,10 @@ here's an example phone directory:
 Once you connect to a call you'll breifly be able to listen to what the users are saying. Report any suspicious behavor to the police!
 
 [[Understood.|Tutorial-3]]
+</center>
 
 :: Tutorial-3
+<center>
 Reporting suspicious behavior is easy!
 
 If a person says something that should be reported to the police, just find it in the call monitor and click the blue report button
@@ -162,8 +166,9 @@ var currentConnected = 0;
 function appendRandom() {
   var paragraph = document.getElementById("call-content");
   var items = ["hi", "hello", "sup"];
-  var item = items[Math.floor(Math.random() * items.length)];
-  items.splice(item)
+  int = Math.floor(Math.random() * items.length)
+  var item = items[int];
+  items.splice(int,1)
   paragraph.innerHTML += item + "<br />";
 }
 
@@ -184,8 +189,9 @@ function connect(number) {
 function appendCrime() {
   var paragraph = document.getElementById("call-content");
   var items = ["Remember, The Job Goes Down in 5 days.", "hello", "sup"];
-  var item = items[Math.floor(Math.random() * items.length)];
-  items.splice(item)
+  int = Math.floor(Math.random() * items.length)
+  var item = items[int];
+  items.splice(int,1)
   paragraph.innerHTML += item + "<br />";
 }
 </script>
