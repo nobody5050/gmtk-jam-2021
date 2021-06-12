@@ -7,14 +7,15 @@
 }
 
 ::StoryTitle
-GMTK Jam 2021
+Hello, Operator
 
 ::Start
-<h1>Welcome to PhoneCompany INC!</h1> 
-We're pleased you decided to apply as a switchboard operator! If you have any questions, just ask. Otherwise, good luck on your first day!
+<h1>Hello Operator!</h1> 
+Congratulations on your new job at PhoneCompany Inc! Your job is to tie people's phone lines together so they can make phone calls. Also, we've had an uptick in crime lately, so if you hear anything suspicious dont forget to report it to the police!
 
-[["How do I operate a switchboard?"|Tutorial]]
-[["Sounds Good Boss!"|Game]]
+Know how to run a switchboard?
+[["Nope, sorry"|Tutorial]]
+[["Absolutely!"|Game]]
 
 :: Credits
 Nobody5050 - Main Dev
@@ -23,7 +24,7 @@ Smol Helpers
 <small>StealthHydra179</small>
 <small>Alvarito050506</small>
 
-:: Tutorial
+:: Tutorial-1
 <center>
 Operating a switchboard is easy!
 
@@ -50,9 +51,10 @@ here's an example call monitor:
   </tr>
 </table>
 
-To respond to a call, look at the phone directory. The phone directory lists all of the people at your station, along with their phone number.
+[[Got it.|Tutorial-2]]
 
-To respond to a call, just look for the destination number in the list, and hit the blue <button class="connect">Connect</button> button.
+::  Tutorial-2
+To respond to a call, look at the phone directory. The phone directory lists all of the people at your station, along with their phone number. Just look for the destination number in the list, and hit the green <button class="connect">Connect</button> button.
 
 here's an example phone directory:
 <h2>Switchboard</h2>
@@ -77,7 +79,14 @@ here's an example phone directory:
   </tr>
 </table>
 
-Once you click the button, you'll have successfully connected the call! Now, you'll have the opportunity to listen in until the next call comes in. Report any suspicious behavor to the police!
+Once you connect to a call you'll breifly be able to listen to what the users are saying. Report any suspicious behavor to the police!
+
+[[Understood.|Tutorial-3]]
+
+:: Tutorial-3
+Reporting suspicious behavior is easy!
+
+If a person says something that should be reported to the police, just find it in the call monitor and click the blue report button
 
 Well, thats it kid! You now know just as much about me at switchboard operating. [[Get out there and connect some calls!|Game]]
 </center>
@@ -150,7 +159,7 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
 <script>
 var currentConnected = 0;
 
-function appendCallContent() {
+function appendRandom() {
   var paragraph = document.getElementById("call-content");
   var items = ["hi", "hello", "sup"];
   var item = items[Math.floor(Math.random() * items.length)];
@@ -166,7 +175,7 @@ function connect(number) {
   document.getElementById(currentConnected).innerHTML = "Connected";
   x = (Math.floor(Math.random() * 2) == 0);
     if(x){
-        appendCallContent();
+        appendRandom();
     }else{
         appendCrime();
     }
