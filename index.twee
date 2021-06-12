@@ -51,13 +51,9 @@ here's an example call monitor:
 
 To respond to a call, look at the phone directory. The phone directory lists all of the people at your station, along with their phone number.
 
-To respond to a call, just look for the destination number in the list, and hit the green <button class="connect">Connect</button> button.
+To respond to a call, just look for the destination number in the list, and hit the blue <button class="connect">Connect</button> button.
 
 here's an example phone directory:
-
-:: Game
-<!-- Everything below is testing for the game -->
-<center>
 <h2>Switchboard</h2>
 <table style="width:100%">
   <tr>
@@ -78,41 +74,70 @@ here's an example phone directory:
     <td>94</td>
     <td><button class="connected" onclick="connect(number)">Connected</button></td>
   </tr>
+</table>
+
+Once you click the button, you'll have successfully connected the call! Now, you'll have the opportunity to listen in until the next call comes in. Report any suspicious behavor to the police!
+
+Well, thats it kid! You now know just as much about me at switchboard operating. [[Get out there and connect some calls!|Game]]
+
+:: Game
+<!-- Everything below is testing for the game -->
+<center>
+<h2>Phone Directory</h2>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Phone Number</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+    <td><button class="disconnected" onclick="connect(50)">Not Connected</button></td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+    <td><button class="connected" onclick="connect(94)">Connected</button></td>
+  </tr>
   <tr>
     <td>John</td>
     <td>Doe</td> 
     <td>85</td>
-    <td><button class="disconnected" onclick="connect(number)">Not Connected</button></td>
+    <td><button class="disconnected" onclick="connect(85)">Not Connected</button></td>
   </tr>
   <tr>
     <td>Jakob</td>
     <td>Tron</td> 
     <td>15</td>
-    <td><button class="disconnected" onclick="connect(number)">Not Connected</button></td>
+    <td><button class="disconnected" onclick="connect(15)">Not Connected</button></td>
   </tr>
   <tr>
     <td>Ryan</td>
     <td>Wang</td> 
     <td>25</td>
-    <td><button class="disconnected" onclick="connect(number)">Not Connected</button></td>
+    <td><button class="disconnected" onclick="connect(25)">Not Connected</button></td>
   </tr>
   <tr>
     <td>Oscar</td>
     <td>Zhang</td> 
     <td>35</td>
-    <td><button class="disconnected" onclick="connect(number)">Not Connected</button></td>
+    <td><button class="disconnected" onclick="connect(35)">Not Connected</button></td>
   </tr>
   <tr>
     <td>Tiffany</td>
     <td>Lee</td> 
     <td>16</td>
-    <td><button class="disconnected" onclick="connect(number)">Not Connected</button></td>
+    <td><button class="disconnected" onclick="connect(16)">Not Connected</button></td>
   </tr>
   <tr>
     <td>Katia</td>
     <td>Tavorak</td> 
     <td>19</td>
-    <td><button class="disconnected" onclick="connect(number)">Not Connected</button></td>
+    <td><button class="disconnected" onclick="connect(19)">Not Connected</button></td>
   </tr>
 </table>
 
