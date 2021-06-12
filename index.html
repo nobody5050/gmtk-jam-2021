@@ -314,7 +314,8 @@ function connect(number) {
   document.getElementsByClassName(&quot;connected&quot;).innerHTML = &quot;Not Connected&quot;;
   document.getElementsByClassName(&quot;connected&quot;).className = &quot;disconnected&quot;;
   document.getElementById(currentConnected).className = &quot;connected&quot;;
-  document.getElementsByClassName(&quot;connected&quot;).innerHTML = &quot;Connected&quot;;
+  document.getElementById(currentConnected).innerHTML = &quot;Connected&quot;;
+  //document.getElementsByClassName(&quot;connected&quot;).innerHTML = &quot;Connected&quot;;
 }
 
 //while(true) {
