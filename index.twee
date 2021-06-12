@@ -36,20 +36,20 @@ Smol Helpers
   <tr>
     <th>Firstname</th>
     <th>Lastname</th> 
-    <th>Age</th>
+    <th>Phone Number</th>
     <th>Status</th>
   </tr>
   <tr>
     <td>Jill</td>
     <td>Smith</td> 
     <td>50</td>
-    <td><button onclick="appendCallContent()">Connect</button></td>
+    <td><button onclick="connect(number)">Not Connected</button></td>
   </tr>
   <tr>
     <td>Eve</td>
     <td>Jackson</td> 
     <td>94</td>
-    <td><button>Connect</button></td>
+    <td><button onclick="connect(number)">Not Connected</button></td>
   </tr>
 </table>
 
