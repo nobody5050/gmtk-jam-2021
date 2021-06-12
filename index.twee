@@ -51,7 +51,7 @@ here's an example call monitor:
 
 To respond to a call, look at the phone directory. The phone directory lists all of the people at your station, along with their phone number.
 
-To respond to a call, just look for the destination number in the list, and hit the green <button class="connected">Connect</button> button.
+To respond to a call, just look for the destination number in the list, and hit the green <button class="connect">Connect</button> button.
 
 here's an example phone directory:
 
