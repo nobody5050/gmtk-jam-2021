@@ -207,7 +207,9 @@ here&#39;s an example call monitor:
   &lt;/tr&gt;
 &lt;/table&gt;
 
-[[Got it.|Tutorial-2]]</tw-passagedata><tw-passagedata pid="4" name="Tutorial-2" tags="" position="475,100" size="100,100">To respond to a call, look at the phone directory. The phone directory lists all of the people at your station, along with their phone number. Just look for the destination number in the list, and hit the green &lt;button class=&quot;connect&quot;&gt;Connect&lt;/button&gt; button.
+[[Got it.|Tutorial-2]]
+&lt;/center&gt;</tw-passagedata><tw-passagedata pid="4" name="Tutorial-2" tags="" position="475,100" size="100,100">&lt;center&gt;
+To respond to a call, look at the phone directory. The phone directory lists all of the people at your station, along with their phone number. Just look for the destination number in the list, and hit the green &lt;button class=&quot;connect&quot;&gt;Connect&lt;/button&gt; button.
 
 here&#39;s an example phone directory:
 &lt;h2&gt;Switchboard&lt;/h2&gt;
@@ -234,7 +236,9 @@ here&#39;s an example phone directory:
 
 Once you connect to a call you&#39;ll breifly be able to listen to what the users are saying. Report any suspicious behavor to the police!
 
-[[Understood.|Tutorial-3]]</tw-passagedata><tw-passagedata pid="5" name="Tutorial-3" tags="" position="600,100" size="100,100">Reporting suspicious behavior is easy!
+[[Understood.|Tutorial-3]]
+&lt;/center&gt;</tw-passagedata><tw-passagedata pid="5" name="Tutorial-3" tags="" position="600,100" size="100,100">&lt;center&gt;
+Reporting suspicious behavior is easy!
 
 If a person says something that should be reported to the police, just find it in the call monitor and click the blue report button
 
@@ -309,8 +313,9 @@ var currentConnected = 0;
 function appendRandom() {
   var paragraph = document.getElementById(&quot;call-content&quot;);
   var items = [&quot;hi&quot;, &quot;hello&quot;, &quot;sup&quot;];
-  var item = items[Math.floor(Math.random() * items.length)];
-  items.splice(item)
+  int = Math.floor(Math.random() * items.length)
+  var item = items[int];
+  items.splice(int,1)
   paragraph.innerHTML += item + &quot;&lt;br /&gt;&quot;;
 }
 
@@ -331,8 +336,9 @@ function connect(number) {
 function appendCrime() {
   var paragraph = document.getElementById(&quot;call-content&quot;);
   var items = [&quot;Remember, The Job Goes Down in 5 days.&quot;, &quot;hello&quot;, &quot;sup&quot;];
-  var item = items[Math.floor(Math.random() * items.length)];
-  items.splice(item)
+  int = Math.floor(Math.random() * items.length)
+  var item = items[int];
+  items.splice(int,1)
   paragraph.innerHTML += item + &quot;&lt;br /&gt;&quot;;
 }
 &lt;/script&gt;</tw-passagedata></tw-storydata>
