@@ -57,6 +57,36 @@ Smol Helpers
     <td>85</td>
     <td><button class="connected" onclick="connect(number)">Connected</button></td>
   </tr>
+  <tr>
+    <td>Jakob</td>
+    <td>Tron</td> 
+    <td>15</td>
+    <td><button class="connected" onclick="connect(number)">Connected</button></td>
+  </tr>
+  <tr>
+    <td>Ryan</td>
+    <td>Wang</td> 
+    <td>25</td>
+    <td><button class="connected" onclick="connect(number)">Connected</button></td>
+  </tr>
+  <tr>
+    <td>Oscar</td>
+    <td>Zhang</td> 
+    <td>35</td>
+    <td><button class="connected" onclick="connect(number)">Connected</button></td>
+  </tr>
+  <tr>
+    <td>Tiffany</td>
+    <td>Lee</td> 
+    <td>16</td>
+    <td><button class="connected" onclick="connect(number)">Connected</button></td>
+  </tr>
+  <tr>
+    <td>Katia</td>
+    <td>Tavorak</td> 
+    <td>19</td>
+    <td><button class="connected" onclick="connect(number)">Connected</button></td>
+  </tr>
 </table>
 
 <h2>Call Log</h2>
