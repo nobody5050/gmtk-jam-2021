@@ -31,10 +31,6 @@ Smol Helpers
 
 :: Game
 <!-- Everything below is testing for the game -->
-
-<h2> Incoming Calls </h2>
-<p> list goes here
-
 <h2>Switchboard</h2>
 <table style="width:100%">
   <tr>
