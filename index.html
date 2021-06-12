@@ -313,7 +313,7 @@ function connect(number) {
   let currentConnected = [number];
   document.getElementsByClassName(&quot;connected&quot;).innerHTML = &quot;Not Connected&quot;;
   document.getElementsByClassName(&quot;connected&quot;).className = &quot;disconnected&quot;;
-  document.getElementById([number]).className = &quot;connected&quot;;
+  document.getElementById(currentConnected).className = &quot;connected&quot;;
   document.getElementsByClassName(&quot;connected&quot;).innerHTML = &quot;Connected&quot;;
 }
 
