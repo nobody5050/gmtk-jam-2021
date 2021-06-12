@@ -24,6 +24,7 @@ Smol Helpers
 <small>Alvarito050506</small>
 
 :: Tutorial
+<center>
 Operating a switchboard is easy!
 
 First, look at the call monitor. The call monitor lists all incoming calls, the phone number being called from, and the destination.
@@ -79,6 +80,7 @@ here's an example phone directory:
 Once you click the button, you'll have successfully connected the call! Now, you'll have the opportunity to listen in until the next call comes in. Report any suspicious behavor to the police!
 
 Well, thats it kid! You now know just as much about me at switchboard operating. [[Get out there and connect some calls!|Game]]
+</center>
 
 :: Game
 <!-- Everything below is testing for the game -->
