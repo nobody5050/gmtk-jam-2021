@@ -1,1 +1,32 @@
+button.disconnected {
+	cursor: pointer;
+	color: #eee;
+	background-color: #FF6961;
+	border: 1px solid #57c;
+	line-height: normal;
+	padding: 0.4em;
+	transition-duration: 200ms;
+	user-select: none;
+}
 
+button.idle {
+	cursor: pointer;
+	color: #eee;
+	background-color: #fdfd96;
+	border: 1px solid #57c;
+	line-height: normal;
+	padding: 0.4em;
+	transition-duration: 200ms;
+	user-select: none;
+}
+
+button.connected {
+	cursor: pointer;
+	color: #eee;
+	background-color: #35a;
+	border: 1px solid #57c;
+	line-height: normal;
+	padding: 0.4em;
+	transition-duration: 200ms;
+	user-select: none;
+}
