@@ -158,8 +158,8 @@ function appendCallContent() {
 
 function connect(number) {
   let currentConnected = [number];
-  document.getElementsByClassName("connected").innerHTML = "Not Connected";
-  document.getElementsByClassName("connected").className = "disconnected";
+  document.getElementsByClassName("connected")[0].innerHTML = "Not Connected";
+  document.getElementsByClassName("connected")[0].className = "disconnected";
   document.getElementById(currentConnected).className = "connected";
   document.getElementById(currentConnected).innerHTML = "Connected";
   //document.getElementsByClassName("connected").innerHTML = "Connected";
