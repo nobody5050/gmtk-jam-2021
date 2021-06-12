@@ -160,7 +160,7 @@ function connect(number) {
   let currentConnected = [number];
   document.getElementsByClassName("connected").innerHTML = "Not Connected";
   document.getElementsByClassName("connected").className = "disconnected";
-  document.getElementById([number]).className = "connected";
+  document.getElementById(currentConnected).className = "connected";
   document.getElementsByClassName("connected").innerHTML = "Connected";
 }
 
