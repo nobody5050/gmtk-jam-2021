@@ -30,9 +30,9 @@ function connect(number) {
   document.getElementsByClassName("connected").innerHTML = "Connected";
 }
 
-while true {
-  
-}
+//while(true) {
+//  
+//}
 
 ::Start
 <h1>Welcome to PhoneCompany INC!</h1> 
