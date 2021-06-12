@@ -9,9 +9,6 @@
 ::StoryTitle
 GMTK Jam 2021
 
-::StoryIncludes
-tutorial.tw2
-
 ::Start
 <h1>Welcome to PhoneCompany INC!</h1> 
 We're pleased you decided to apply as a switchboard operator! If you have any questions, just ask. Otherwise, good luck on your first day!
@@ -26,7 +23,37 @@ Smol Helpers
 <small>StealthHydra179</small>
 <small>Alvarito050506</small>
 
-::@include tutorial.tw2
+:: Tutorial
+Operating a switchboard is easy!
+
+First, look at the call monitor. The call monitor lists all incoming calls, the phone number being called from, and the destination.
+
+here's an example call monitor:
+
+<h2>Call Monitor</h2>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Origin</th> 
+    <th>Destination</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>20</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>19</td> 
+    <td>94</td>
+  </tr>
+</table>
+
+To respond to a call, look at the phone directory. The phone directory lists all of the people at your station, along with their phone number.
+
+To respond to a call, just look for the destination number in the list, and hit the green <button class="connected">Connect</button> button.
+
+here's an example phone directory:
 
 :: Game
 <!-- Everything below is testing for the game -->
