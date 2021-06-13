@@ -595,7 +595,7 @@ here&#39;s an example phone directory:
     &lt;td&gt;Eve&lt;/td&gt;
     &lt;td&gt;Jackson&lt;/td&gt; 
     &lt;td&gt;94&lt;/td&gt;
-    &lt;td&gt;&lt;button class=&quot;connected&quot; onclick=&quot;connect(number)&quot;&gt;Connected&lt;/button&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;button class=&quot;connected&quot; onclick=&quot;alert(&#39;you clicked the box!&#39;)&quot;&gt;Connected&lt;/button&gt;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
 
@@ -674,22 +674,18 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
   &lt;tr&gt;
     &lt;td&gt;message&lt;/td&gt;
   &lt;tr&gt;
-&lt;/table&gt;
-
-&lt;/center&gt;
+&lt;!-- For some reason closing the table and center renders. unsure why, just not gonna close em --&gt;
 &lt;script&gt;
 var currentConnected = 0;
 var crimeitems = [&quot;Remember, The Job Goes Down in 5 days.&quot;, &quot;hello&quot;, &quot;sup&quot;];
 var items = [&quot;hi&quot;, &quot;hello&quot;, &quot;sup&quot;];
-var paragraph = document.getElementById(&#39;call-content&#39;).getElementsByTagName(&#39;tbody&#39;)[0];
+var paragraph = document.getElementById(&quot;call-content&quot;);
 
 function appendRandom() {
-  //var paragraph = document.getElementById(&quot;call-content&quot;);
-  var newRow = paragraph.insertRow(tableRef.rows.length);
   int = Math.floor(Math.random() * items.length)
   var item = items[int];
   items.splice(int,1)
-  newRow.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+  paragraph.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
 }
 
 function connect(number) {
@@ -707,12 +703,10 @@ function connect(number) {
 }
 
 function appendCrime() {
-  //var paragraph = document.getElementById(&quot;call-content&quot;);
-  var newRow = paragraph.insertRow(tableRef.rows.length);
   int = Math.floor(Math.random() * crimeitems.length)
   var item = crimeitems[int];
   crimeitems.splice(int,1)
-  newRow.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+  paragraph.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
 }
 &lt;/script&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
