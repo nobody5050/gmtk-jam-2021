@@ -681,13 +681,15 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
 var currentConnected = 0;
 var crimeitems = [&quot;Remember, The Job Goes Down in 5 days.&quot;, &quot;hello&quot;, &quot;sup&quot;];
 var items = [&quot;hi&quot;, &quot;hello&quot;, &quot;sup&quot;];
+var paragraph = document.getElementById(&#39;call-content&#39;).getElementsByTagName(&#39;tbody&#39;)[0];
 
 function appendRandom() {
-  var paragraph = document.getElementById(&quot;call-content&quot;);
+  //var paragraph = document.getElementById(&quot;call-content&quot;);
+  var newRow = paragraph.insertRow(tableRef.rows.length);
   int = Math.floor(Math.random() * items.length)
   var item = items[int];
   items.splice(int,1)
-  paragraph.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+  newRow.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
 }
 
 function connect(number) {
@@ -705,11 +707,12 @@ function connect(number) {
 }
 
 function appendCrime() {
-  var paragraph = document.getElementById(&quot;call-content&quot;);
+  //var paragraph = document.getElementById(&quot;call-content&quot;);
+  var newRow = paragraph.insertRow(tableRef.rows.length);
   int = Math.floor(Math.random() * crimeitems.length)
   var item = crimeitems[int];
   crimeitems.splice(int,1)
-  paragraph.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+  newRow.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
 }
 &lt;/script&gt;</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
