@@ -180,7 +180,7 @@ var currentConnected = 0;
 var crimeitems = ["Remember, The Job Goes Down in 5 days.", "hello", "sup"];
 var items = ["hi", "hello", "sup"];
 var paragraph = document.getElementById("call-content");
-var remainingTime = 30;
+var remainingTime = 60;
 var timer = setInterval(countdown, 1000); //set the countdown to every second
 var elem = document.querySelector('#time');
 
@@ -224,7 +224,7 @@ function countdown() {
         clearTimeout(timer);
         alert("GAME OVER")
       } else {
-        elem.innerHTML = remainingTime + ' left';
+        elem.innerHTML = remainingTime + ' seconds';
         remainingTime--; //we subtract the second each iteration
       }
     }
