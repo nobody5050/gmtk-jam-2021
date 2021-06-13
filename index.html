@@ -615,6 +615,16 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
 &lt;/center&gt;</tw-passagedata><tw-passagedata pid="7" name="Game" tags="" position="850,100" size="100,100">&lt;!-- Everything below is testing for the game --&gt;
 &lt;center&gt;
 &lt;p&gt;Complete as many calls as you can in a minute! Time remaining: &lt;span id=&quot;time&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2&gt;Call Monitor&lt;/h2&gt;
+&lt;table style=&quot;width:100%&quot;&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+    &lt;th&gt;Origin&lt;/th&gt; 
+    &lt;th&gt;Destination&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+
 &lt;h2&gt;Phone Directory&lt;/h2&gt;
 &lt;table style=&quot;width:100%&quot;&gt;
   &lt;tr&gt;
@@ -722,6 +732,24 @@ function appendCrime() {
   paragraph.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
 }
 
+function generateCall() {
+  x = (Math.floor(Math.random() * 2) == 0);
+    if(x){
+        var names = [&quot;hi&quot;, &quot;hello&quot;, &quot;sup&quot;];
+	int = Math.floor(Math.random() * names.length)
+	var item = items[int];
+	var nums = [&quot;hi&quot;, &quot;hello&quot;, &quot;sup&quot;];
+	int = Math.floor(Math.random() * nums.length)
+	var destination = items[int];
+	var callmonitor = document.getElementById(&quot;call-monitor&quot;);
+	const origin = Math.floor(Math.random() * 6) + 1
+	callmonitor.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&quot; + &quot;&lt;td&gt;&quot; + origin + &quot;&lt;/td&gt;&quot; + &quot;&lt;td&gt;&quot; + destination + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;
+    console.log(rndInt);
+    }else{
+        console.log(&quot;hi&quot;)
+    }
+}
+
 function CountDownTimer(duration, granularity) {
   this.duration = duration;
   this.granularity = granularity || 1000;
@@ -736,6 +764,7 @@ function countdown() {
       } else {
         elem.innerHTML = remainingTime + &#39; seconds&#39;;
         remainingTime--; //we subtract the second each iteration
+	generateCall();
       }
     }
 &lt;/script&gt;</tw-passagedata></tw-storydata>
