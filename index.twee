@@ -229,9 +229,7 @@ function generateCall() {
         var names = ["hi", "hello", "sup"];
 	int = Math.floor(Math.random() * names.length)
 	var item = items[int];
-	var nums = ["50", "94", "85", "15", "25", "35", "16", "19"];
-	int = Math.floor(Math.random() * nums.length)
-	var destination = items[int];
+	var destination = Math.floor(Math.random() * 99) + 1;
 	var callmonitor = document.getElementById("call-monitor");
 	const origin = Math.floor(Math.random() * 99) + 1
 	callmonitor.innerHTML += "<tr><td>" + item + "</td>" + "<td>" + origin + "</td>" + "<td>" + destination + "</td></tr>"
