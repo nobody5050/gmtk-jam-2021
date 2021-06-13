@@ -690,9 +690,8 @@ var crimeitems = [&quot;Remember, The Job Goes Down in 5 days.&quot;, &quot;hell
 var items = [&quot;hi&quot;, &quot;hello&quot;, &quot;sup&quot;];
 var paragraph = document.getElementById(&quot;call-content&quot;);
 var remainingTime = 30;
-var elem = document.getElementById(&#39;countdown_div&#39;);
 var timer = setInterval(countdown, 1000); //set the countdown to every second
-display = document.querySelector(&#39;#time&#39;);
+var elem = document.querySelector(&#39;#time&#39;);
 
 function appendRandom() {
   int = Math.floor(Math.random() * items.length)
