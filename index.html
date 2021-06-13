@@ -744,8 +744,8 @@ function generateCall() {
 	var callmonitor = document.getElementById(&quot;call-monitor&quot;);
 	const origin = Math.floor(Math.random() * 99) + 1
 	callmonitor.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&quot; + &quot;&lt;td&gt;&quot; + origin + &quot;&lt;/td&gt;&quot; + &quot;&lt;td&gt;&quot; + destination + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;
-	document.getElementsByClassName(&quot;disconnected&quot;)[Math.floor(Math.random() *  document.getElementsByClassName(&quot;disconnected&quot;).lenght) + 1].className = &quot;connect&quot;;
-	document.getElementsByClassName(&quot;disconnected&quot;)[Math.floor(Math.random() *  document.getElementsByClassName(&quot;disconnected&quot;).lenght) + 1].innerText = &quot;connect&quot;;
+	document.getElementsByClassName(&quot;disconnected&quot;)[Math.floor(Math.random() *  document.getElementsByClassName(&quot;disconnected&quot;).lenght) - 1].className = &quot;connect&quot;;
+	document.getElementsByClassName(&quot;disconnected&quot;)[Math.floor(Math.random() *  document.getElementsByClassName(&quot;disconnected&quot;).lenght) - 1].innerText = &quot;connect&quot;;
     }else{
         console.log(&quot;hi&quot;)
     }
