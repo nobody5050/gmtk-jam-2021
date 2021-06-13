@@ -233,7 +233,7 @@ function generateCall() {
 	var callmonitor = document.getElementById("call-monitor");
 	const origin = Math.floor(Math.random() * 99) + 1
 	callmonitor.innerHTML += "<tr><td>" + item + "</td>" + "<td>" + origin + "</td>" + "<td>" + destination + "</td></tr>"
-	let tables = document.getElementsByTagName("tr");
+	let tables = document.getElementsByTagName("table")[1].children;
 	let RandomTable = tables[Math.floor(Math.random() * tables.length - 1)];
 	let button = RandomTable.getElementsByTagName("button")[0];
 	
