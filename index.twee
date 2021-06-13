@@ -71,7 +71,7 @@ here's an example phone directory:
     <td>Jill</td>
     <td>Smith</td> 
     <td>50</td>
-    <td><button class="disconnected" onclick="connect(number)">Not Connected</button></td>
+    <td><button class="disconnected" onclick="alert('you clicked the box!')">Not Connected</button></td>
   </tr>
   <tr>
     <td>Eve</td>
