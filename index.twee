@@ -40,7 +40,7 @@ First, look at the call monitor. The call monitor lists all incoming calls, the 
 here's an example call monitor:
 
 <h2>Call Monitor</h2>
-<table style="width:100%">
+<table style="width:100%" id="call-monitor">
   <tr>
     <th>Firstname</th>
     <th>Origin</th> 
@@ -214,7 +214,7 @@ function connect(number) {
     }else{
         appendCrime();
     }
-    deleteRow("directory")
+    deleteRow(call-monitor)
 }
 
 function appendCrime() {
