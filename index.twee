@@ -214,7 +214,7 @@ function connect(number) {
     }else{
         appendCrime();
     }
-    deleteRow(call-monitor)
+    deleterow(call-monitor)
 }
 
 function appendCrime() {
