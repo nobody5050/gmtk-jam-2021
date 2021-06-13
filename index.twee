@@ -226,7 +226,6 @@ function countdown() {
       } else {
         elem.innerHTML = remainingTime + ' left';
         remainingTime--; //we subtract the second each iteration
-	display.textContent = minutes + ":" + seconds;
       }
     }
 </script>
