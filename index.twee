@@ -15,7 +15,7 @@ Congratulations on your new job at PhoneCompany Inc! Your job is to tie people's
 
 Know how to run a switchboard?
 [["Nope, sorry"|Tutorial-1]]
-[["Absolutely!"|Game]]
+[["Absolutely!"|PreGame]]
 
 :: Credits
 Nobody5050 - Main Dev
@@ -23,6 +23,13 @@ Nobody5050 - Main Dev
 Smol Helpers
 <small>StealthHydra179</small>
 <small>Alvarito050506</small>
+
+:: PreGame
+You'll have 1 minute to correctly place as many calls as you can, while reporting all suspicious activity to the police. The longer you take to place a call, the less points you'll earn, and if you report a good call to the police you'll loose points.
+Good luck!
+
+[[Click here to play|Game]]
+[[See the tutorial|Tutorial-1]]
 
 :: Tutorial-1
 <center>
@@ -98,6 +105,7 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
 :: Game
 <!-- Everything below is testing for the game -->
 <center>
+<p>Complete as many calls as you can in a minute! Time remaining: <span id="time"></span>
 <h2>Phone Directory</h2>
 <table style="width:100%">
   <tr>
@@ -199,5 +207,40 @@ function appendCrime() {
   crimeitems.splice(int,1)
   paragraph.innerHTML += "<tr><td>" + item + "</td></tr>";
 }
+
+function startTimer(duration, display) {
+    var start = Date.now(),
+        diff,
+        minutes,
+        seconds;
+    function timer() {
+        // get the number of seconds that have elapsed since 
+        // startTimer() was called
+        diff = duration - (((Date.now() - start) / 1000) | 0);
+
+        // does the same job as parseInt truncates the float
+        minutes = (diff / 60) | 0;
+        seconds = (diff % 60) | 0;
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds; 
+
+        if (diff <= 0) {
+            // add one second so that the count down starts at the full duration
+            // example 05:00 not 04:59
+            start = Date.now() + 1000;
+        }
+    };
+    // we don't want to wait a full second before the timer starts
+    timer();
+    setInterval(timer, 1000);
+}
+window.onload = function () {
+    var fiveMinutes = 60,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
 </script>
 
