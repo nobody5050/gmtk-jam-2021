@@ -175,10 +175,15 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
 <div class="connected" style="position: absolute;left: -9999px;">Not Connected</div>
 <!-- For some reason closing the table and center renders. unsure why, just not gonna close em -->
 <script>
+
 var currentConnected = 0;
 var crimeitems = ["Remember, The Job Goes Down in 5 days.", "hello", "sup"];
 var items = ["hi", "hello", "sup"];
 var paragraph = document.getElementById("call-content");
+var remainingTime = 30;
+var elem = document.getElementById('countdown_div');
+var timer = setInterval(countdown, 1000); //set the countdown to every second
+display = document.querySelector('#time');
 
 function appendRandom() {
   int = Math.floor(Math.random() * items.length)
@@ -208,39 +213,22 @@ function appendCrime() {
   paragraph.innerHTML += "<tr><td>" + item + "</td></tr>";
 }
 
-function startTimer(duration, display) {
-    var start = Date.now(),
-        diff,
-        minutes,
-        seconds;
-    function timer() {
-        // get the number of seconds that have elapsed since 
-        // startTimer() was called
-        diff = duration - (((Date.now() - start) / 1000) | 0);
-
-        // does the same job as parseInt truncates the float
-        minutes = (diff / 60) | 0;
-        seconds = (diff % 60) | 0;
-
-        minutes = minutes < 10 ? "0" + minutes : minutes;
-        seconds = seconds < 10 ? "0" + seconds : seconds;
-
-        display.textContent = minutes + ":" + seconds; 
-
-        if (diff <= 0) {
-            // add one second so that the count down starts at the full duration
-            // example 05:00 not 04:59
-            start = Date.now() + 1000;
-        }
-    };
-    // we don't want to wait a full second before the timer starts
-    timer();
-    setInterval(timer, 1000);
+function CountDownTimer(duration, granularity) {
+  this.duration = duration;
+  this.granularity = granularity || 1000;
+  this.tickFtns = [];
+  this.running = false;
 }
-window.onload = function () {
-    var fiveMinutes = 60,
-        display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
-};
+
+function countdown() {
+      if (remainingTime == -1) {
+        clearTimeout(timer);
+        alert("GAME OVER")
+      } else {
+        elem.innerHTML = remainingTime + ' left';
+        remainingTime--; //we subtract the second each iteration
+	display.textContent = minutes + ":" + seconds;
+      }
+    }
 </script>
 
