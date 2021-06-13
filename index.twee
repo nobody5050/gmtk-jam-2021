@@ -233,8 +233,10 @@ function generateCall() {
 	int = Math.floor(Math.random() * nums.length)
 	var destination = items[int];
 	var callmonitor = document.getElementById("call-monitor");
-	const origin = Math.floor(Math.random() * 6) + 1
+	const origin = Math.floor(Math.random() * 99) + 1
 	callmonitor.innerHTML += "<tr><td>" + item + "</td>" + "<td>" + origin + "</td>" + "<td>" + destination + "</td></tr>"
+	document.getElementsByClassName("disconnected")[Math.floor(Math.random() *  document.getElementsByClassName("disconnected").lenght) + 1].className = "connect";
+	document.getElementsByClassName("disconnected")[Math.floor(Math.random() *  document.getElementsByClassName("disconnected").lenght) + 1].innerText = "connect";
     }else{
         console.log("hi")
     }
@@ -257,5 +259,12 @@ function countdown() {
 	generateCall();
       }
     }
+    
+function deleterow(tableID) {
+    var table = document.getElementById(tableID);
+    var rowCount = table.rows.length;
+
+    table.deleteRow(rowCount -1);
+}
 </script>
 
