@@ -235,7 +235,6 @@ function generateCall() {
 	var callmonitor = document.getElementById("call-monitor");
 	const origin = Math.floor(Math.random() * 6) + 1
 	callmonitor.innerHTML += "<tr><td>" + item + "</td>" + "<td>" + origin + "</td>" + "<td>" + destination + "</td></tr>"
-    console.log(rndInt);
     }else{
         console.log("hi")
     }
