@@ -172,7 +172,7 @@ First, look at the call monitor. The call monitor lists all incoming calls, the 
 here&#39;s an example call monitor:
 
 &lt;h2&gt;Call Monitor&lt;/h2&gt;
-&lt;table style=&quot;width:100%&quot;&gt;
+&lt;table style=&quot;width:100%&quot; id=&quot;call-monitor&quot;&gt;
   &lt;tr&gt;
     &lt;th&gt;Firstname&lt;/th&gt;
     &lt;th&gt;Origin&lt;/th&gt; 
@@ -337,7 +337,7 @@ function connect(number) {
     }else{
         appendCrime();
     }
-    deleteRow(&quot;directory&quot;)
+    deleteRow(call-monitor)
 }
 
 function appendCrime() {
