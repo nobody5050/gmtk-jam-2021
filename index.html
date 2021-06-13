@@ -358,8 +358,13 @@ function generateCall() {
 	callmonitor.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&quot; + &quot;&lt;td&gt;&quot; + origin + &quot;&lt;/td&gt;&quot; + &quot;&lt;td&gt;&quot; + destination + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;
 	let tables = document.getElementById(&quot;directory&quot;).children;
 	let RandomTable = tables[Math.floor(Math.random() * tables.length - 1)];
-	let button = RandomTable.getElementsByTagName(&quot;button&quot;)[0];
-	
+	try {
+	  let button = RandomTable.getElementsByTagName(&quot;button&quot;)[0];
+	}
+        catch(err) {
+	  console.log(err)
+	}
+
 	button.className = &quot;connect&quot;
 	button.innerText = &quot;Connect&quot;
     }else{
