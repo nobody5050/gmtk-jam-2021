@@ -168,7 +168,8 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
 <h2>Call Log</h2>
 <table id="call-content">
   <tr>
-    <td>message</td>
+    <td>Message</td>
+    <td>status</td>
   <tr>
 </table>
 </center>
