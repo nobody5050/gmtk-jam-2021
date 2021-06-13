@@ -322,7 +322,7 @@ function appendRandom() {
   int = Math.floor(Math.random() * items.length)
   var item = items[int];
   items.splice(int,1)
-  paragraph.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&quot; + &#39;&lt;button class=&quot;disconnected&quot; onclick=&quot;filterCall(&#39; + item + &quot;,&quot; + document.getElementById(&quot;call-content&quot;).rows.length + &quot;&#39;)&gt;Report&lt;/button&gt;&lt;/tr&gt;&quot;;
+  paragraph.innerHTML += `&lt;tr&gt;&lt;td&gt;${item}&lt;/td&gt;&lt;button class=&quot;disconnected&quot; onclick=&quot;filterCall(&#39;${item}, ${document.getElementById(&quot;call-content&quot;).rows.length}&#39;)&quot;&gt;Report&lt;/button&gt;&lt;/tr&gt;`;
 }
 
 function connect(number) {
@@ -344,7 +344,7 @@ function appendCrime() {
   int = Math.floor(Math.random() * crimeitems.length)
   var item = crimeitems[int];
   crimeitems.splice(int,1)
-  paragraph.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&quot; + &#39;&lt;button class=&quot;disconnected&quot; onclick=&quot;filterCall(&#39; + item + &quot;,&quot; + document.getElementById(&quot;call-content&quot;).rows.length + &quot;&#39;)&gt;Report&lt;/button&gt;&lt;/tr&gt;&quot;;
+  paragraph.innerHTML += `&lt;tr&gt;&lt;td&gt;${item}&lt;/td&gt;&lt;button class=&quot;disconnected&quot; onclick=&quot;filterCall(&#39;${item}, ${document.getElementById(&quot;call-content&quot;).rows.length}&#39;)&quot;&gt;Report&lt;/button&gt;&lt;/tr&gt;`;
 }
 
 function generateCall() {
