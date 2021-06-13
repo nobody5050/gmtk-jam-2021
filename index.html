@@ -689,7 +689,7 @@ var currentConnected = 0;
 var crimeitems = [&quot;Remember, The Job Goes Down in 5 days.&quot;, &quot;hello&quot;, &quot;sup&quot;];
 var items = [&quot;hi&quot;, &quot;hello&quot;, &quot;sup&quot;];
 var paragraph = document.getElementById(&quot;call-content&quot;);
-var remainingTime = 30;
+var remainingTime = 60;
 var timer = setInterval(countdown, 1000); //set the countdown to every second
 var elem = document.querySelector(&#39;#time&#39;);
 
@@ -733,7 +733,7 @@ function countdown() {
         clearTimeout(timer);
         alert(&quot;GAME OVER&quot;)
       } else {
-        elem.innerHTML = remainingTime + &#39; left&#39;;
+        elem.innerHTML = remainingTime + &#39; seconds&#39;;
         remainingTime--; //we subtract the second each iteration
       }
     }
