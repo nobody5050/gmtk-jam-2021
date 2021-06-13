@@ -274,5 +274,9 @@ function deleterow(tableID) {
 
     table.deleteRow(rowCount -1);
 }
+
+function filterCall(text, id) {
+  console.log(text)
+}
 </script>
 
