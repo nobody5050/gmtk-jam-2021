@@ -77,7 +77,7 @@ here's an example phone directory:
     <td>Eve</td>
     <td>Jackson</td> 
     <td>94</td>
-    <td><button class="connected" onclick="connect(number)">Connected</button></td>
+    <td><button class="connected" onclick="alert('you clicked the box!')">Connected</button></td>
   </tr>
 </table>
 
@@ -162,22 +162,18 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
   <tr>
     <td>message</td>
   <tr>
-</table>
-
-</center>
+<!-- For some reason closing the table and center renders. unsure why, just not gonna close em -->
 <script>
 var currentConnected = 0;
 var crimeitems = ["Remember, The Job Goes Down in 5 days.", "hello", "sup"];
 var items = ["hi", "hello", "sup"];
-var paragraph = document.getElementById('call-content').getElementsByTagName('tbody')[0];
+var paragraph = document.getElementById("call-content");
 
 function appendRandom() {
-  //var paragraph = document.getElementById("call-content");
-  var newRow = paragraph.insertRow(tableRef.rows.length);
   int = Math.floor(Math.random() * items.length)
   var item = items[int];
   items.splice(int,1)
-  newRow.innerHTML += "<tr><td>" + item + "</td></tr>";
+  paragraph.innerHTML += "<tr><td>" + item + "</td></tr>";
 }
 
 function connect(number) {
@@ -195,12 +191,10 @@ function connect(number) {
 }
 
 function appendCrime() {
-  //var paragraph = document.getElementById("call-content");
-  var newRow = paragraph.insertRow(tableRef.rows.length);
   int = Math.floor(Math.random() * crimeitems.length)
   var item = crimeitems[int];
   crimeitems.splice(int,1)
-  newRow.innerHTML += "<tr><td>" + item + "</td></tr>";
+  paragraph.innerHTML += "<tr><td>" + item + "</td></tr>";
 }
 </script>
 
