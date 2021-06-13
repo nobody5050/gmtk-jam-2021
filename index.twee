@@ -106,6 +106,16 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
 <!-- Everything below is testing for the game -->
 <center>
 <p>Complete as many calls as you can in a minute! Time remaining: <span id="time"></span></p>
+
+<h2>Call Monitor</h2>
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Origin</th> 
+    <th>Destination</th>
+  </tr>
+</table>
+
 <h2>Phone Directory</h2>
 <table style="width:100%">
   <tr>
@@ -213,6 +223,24 @@ function appendCrime() {
   paragraph.innerHTML += "<tr><td>" + item + "</td></tr>";
 }
 
+function generateCall() {
+  x = (Math.floor(Math.random() * 2) == 0);
+    if(x){
+        var names = ["hi", "hello", "sup"];
+	int = Math.floor(Math.random() * names.length)
+	var item = items[int];
+	var nums = ["hi", "hello", "sup"];
+	int = Math.floor(Math.random() * nums.length)
+	var destination = items[int];
+	var callmonitor = document.getElementById("call-monitor");
+	const origin = Math.floor(Math.random() * 6) + 1
+	callmonitor.innerHTML += "<tr><td>" + item + "</td>" + "<td>" + origin + "</td>" + "<td>" + destination + "</td></tr>"
+    console.log(rndInt);
+    }else{
+        console.log("hi")
+    }
+}
+
 function CountDownTimer(duration, granularity) {
   this.duration = duration;
   this.granularity = granularity || 1000;
@@ -227,6 +255,7 @@ function countdown() {
       } else {
         elem.innerHTML = remainingTime + ' seconds';
         remainingTime--; //we subtract the second each iteration
+	generateCall();
       }
     }
 </script>
