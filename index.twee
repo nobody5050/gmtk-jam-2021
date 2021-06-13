@@ -233,17 +233,17 @@ function generateCall() {
 	var callmonitor = document.getElementById("call-monitor");
 	const origin = Math.floor(Math.random() * 99) + 1
 	callmonitor.innerHTML += "<tr><td>" + item + "</td>" + "<td>" + origin + "</td>" + "<td>" + destination + "</td></tr>"
-	let tables = document.getElementById("directory").children;
-	let RandomTable = tables[Math.floor(Math.random() * tables.length - 1)];
 	try {
+	  let tables = document.getElementById("directory").children;
+	  let RandomTable = tables[Math.floor(Math.random() * tables.length - 1)];
 	  let button = RandomTable.getElementsByTagName("button")[0];
+	  
+	  button.className = "connect"
+	  button.innerText = "Connect"
 	}
         catch(err) {
 	  console.log(err)
 	}
-
-	button.className = "connect"
-	button.innerText = "Connect"
     }else{
         console.log("hi")
     }
