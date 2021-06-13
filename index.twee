@@ -221,7 +221,7 @@ function appendCrime() {
   int = Math.floor(Math.random() * crimeitems.length)
   var item = crimeitems[int];
   crimeitems.splice(int,1)
-  paragraph.innerHTML += "<tr><td>" + item + "</td></tr>";
+  paragraph.innerHTML += "<tr><td>" + item + "</td>" + '<button class="disconnected" onclick="filterCall(' + item + "," + document.getElementById("myTable").rows.length + ")>Report</button></tr>";
 }
 
 function generateCall() {
