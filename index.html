@@ -626,7 +626,7 @@ Well, thats it kid! You now know just as much about me at switchboard operating.
 &lt;/table&gt;
 
 &lt;h2&gt;Phone Directory&lt;/h2&gt;
-&lt;table style=&quot;width:100%&quot;&gt;
+&lt;table style=&quot;width:100%&quot; id=directory&quot;&gt;
   &lt;tr&gt;
     &lt;th&gt;Firstname&lt;/th&gt;
     &lt;th&gt;Lastname&lt;/th&gt; 
@@ -744,10 +744,9 @@ function generateCall() {
 	var callmonitor = document.getElementById(&quot;call-monitor&quot;);
 	const origin = Math.floor(Math.random() * 99) + 1
 	callmonitor.innerHTML += &quot;&lt;tr&gt;&lt;td&gt;&quot; + item + &quot;&lt;/td&gt;&quot; + &quot;&lt;td&gt;&quot; + origin + &quot;&lt;/td&gt;&quot; + &quot;&lt;td&gt;&quot; + destination + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;
-	//indexoflist = Math.floor(Math.random() *  document.getElementsByClassName(&quot;disconnected&quot;).length) - 1;
-	//document.getElementsByClassName(&quot;disconnected&quot;)[indexoflist].className = &quot;connect&quot;;
-	//document.getElementsByClassName(&quot;disconnected&quot;)[indexoflist].innerText = &quot;connect&quot;;
-	
+	rows = document.getElementsByTagName(&quot;directory&quot;)[0].rows;
+	let td = rows.cells[4]
+	alert(td)
     }else{
         console.log(&quot;hi&quot;)
     }
